@@ -1,9 +1,8 @@
-<div class="clr-row" (mouseover)="hideElement = false"
-(mouseleave)="hideElement = true">
+<div class="clr-row">
 <a class="clr-col-9" clrVerticalNavLink  [routerLink]="['/t', topic]"
-      routerLinkActive="active" >
+      routerLinkActive="active">
         <cds-icon shape="hashtag" clrverticalnavicon class="nav-icon"></cds-icon>
         <span class="nav-text">{{ topic }}</span>
 </a>
-<cds-icon shape="trash" class="clr-col-2 p-2" style="color:red"  [hidden]="hideElement  && !isMobileScreen" size="isMobileScreen?'lg':'md'" (click)="onTopicDelete()"></cds-icon>
+<cds-icon shape="trash" class="clr-col-2 pt-5" style="color:red" size="isMobileScreen?'lg':'md'" (click)="onTopicDelete()"></cds-icon>
 </div>
